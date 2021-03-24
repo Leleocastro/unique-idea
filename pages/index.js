@@ -5,7 +5,8 @@ function Home() {
     return (
         <div>
             <Menu />
-            <h4>Página Inicial Leonardo Castro</h4>
+            <h4>Página Inicial em construção</h4>
+            <h1>Leonardo Castro</h1>
             <Contador />
         </div>
     )
