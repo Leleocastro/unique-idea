@@ -1,5 +1,6 @@
-import Menu from '../components/Menu.js'
-import {useState} from 'react'
+import Menu from '../components/Menu.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {useState} from 'react';
 
 function Home() {
     return (
@@ -7,7 +8,6 @@ function Home() {
             <Menu />
             <h4>Página Inicial em construção</h4>
             <h1>Leonardo Castro</h1>
-            <h4>Página Inicial Leonardo Castro</h4>
             <Contador />
         </div>
     )
