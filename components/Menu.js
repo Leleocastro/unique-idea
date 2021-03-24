@@ -1,7 +1,7 @@
 const Menu = () => {
     return (
         <div>
-            Menu Components
+            Menu em Construção!!
         </div>
     );
 }

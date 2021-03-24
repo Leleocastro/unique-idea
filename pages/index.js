@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
             <Menu />
-            <h4>Home</h4>
+            <h4>Página Inicial Leonardo Castro</h4>
             <Contador />
         </div>
     )
