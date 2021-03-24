@@ -1,8 +1,10 @@
+import Menu from '../components/Menu.js'
 import {useState} from 'react'
 
 function Home() {
     return (
         <div>
+            <Menu />
             <h4>Home</h4>
             <Contador />
         </div>
