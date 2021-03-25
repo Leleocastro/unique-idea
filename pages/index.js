@@ -1,11 +1,14 @@
-import {useState} from 'react'
+import Menu from '../components/Menu.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {useState} from 'react';
 
 function Home() {
     return (
         <div>
-            <h4>Home</h4>
+            <Menu />
+            <h4>Página Inicial em construção</h4>
+            <h1>Leonardo Castro</h1>
             <Contador />
-            <div>Hello World!!!</div>
         </div>
     )
 }
@@ -13,7 +16,7 @@ function Home() {
 function Contador(){
     const [contador, setContador] = useState(1);
     function adicionarContador() {
-        setContador(contador + 1);
+        setContador(contador * 2);
     }
 
     return (
