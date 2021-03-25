@@ -7,56 +7,43 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  Container,
 } from 'reactstrap';
-import Link from 'next/link';
+import Image from 'next/image';
+// const imagemLogo = require('../images/LOGOLTAG.png');
 
 const linkStyle = {
-    marginRight: 15
+  marginRight: 15
 }
 const Menu = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen);
 
-    return (
+  return (
     <div>
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/" >L.Tag</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/sobre">Sobre</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="contato">Contato</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
+        <Container>
+          <NavbarBrand href="/" >L.Tag</NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="mr-auto" navbar>
+              <NavItem>
+                <NavLink href="/">Início</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/sobre">Sobre</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/contato">Contato</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/Leleocastro">GitHub</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Container>
       </Navbar>
     </div>
   );
