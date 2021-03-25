@@ -1,4 +1,5 @@
 import Menu from '../components/Menu.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Sobre() {
     return (
