@@ -9,7 +9,7 @@ import {
   NavLink,
   Container,
 } from 'reactstrap';
-import Image from 'next/image';
+import logo from '../images/Logo2.png';
 // const imagemLogo = require('../images/LOGOLTAG.png');
 
 const linkStyle = {
@@ -23,18 +23,23 @@ const Menu = () => {
 
   return (
     <div>
+      <style>{`
+      .logo{
+        width: 35px;
+        height: 35px;
+      `}</style>
       <Navbar color="dark" dark expand="md">
         <Container>
-          <NavbarBrand href="/" >L.Tag</NavbarBrand>
+          <NavbarBrand href="/" ><img src={logo} alt='logo' id='logo' className="logo"/></NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink href="/">Início</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="/sobre">Sobre</NavLink>
-              </NavItem>
+              {/* <NavItem>
+                <NavLink href="/sobre">Trabalhos</NavLink>
+              </NavItem> */}
               <NavItem>
                 <NavLink href="/contato">Contato</NavLink>
               </NavItem>

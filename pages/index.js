@@ -6,7 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { Jumbotron, Container } from 'reactstrap';
 import { useState } from 'react';
-import Image from 'next/image';
+import img1 from '../images/Screenshot_20210326-014620.jpg';
+import img2 from '../images/Screenshot_20210326-014650.jpg';
+import img3 from '../images/Screenshot_20210326-014933.jpg';
+import img4 from '../images/Screenshot_20210326-014844.jpg';
 // import App from '../pages/_app'
 library.add(fas);
 
@@ -58,7 +61,7 @@ function Home() {
             <style>
                 {`.padrao{
                     width: 80%;
-                    height: 300px;
+                    height: 500px;
                     border-radius: 21px 21px 0 0;
                 }.product-device {
                     position: absolute;
@@ -104,8 +107,12 @@ function Home() {
                       flex: 1;
                     }
                   }
+                  .padrao2{
+                    width: 100%;
+                    border-radius: 21px 21px 0 0;
+                  .overflow-hidden { overflow: hidden; }
                   
-                  .overflow-hidden { overflow: hidden; }`}
+                  `}
             </style>
 
             <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
@@ -113,62 +120,65 @@ function Home() {
                     <h2 className="display-8 font-weight-normal">Portfólio</h2>
                     <h1 className="display-4 font-weight-normal">Leonardo Castro</h1>
                     <p className="lead font-weight-normal">Soluções simples em várias linguagens, todo meu aprendizado e trabalhos.</p>
-                    <a className="btn btn-outline-secondary" href="#">Veja mais</a>
+                    {/* <a className="btn btn-outline-secondary" href="#">Veja mais</a> */}
                 </div>
                 <div className="product-device box-shadow d-none d-md-block"></div>
                 <div className="product-device product-device-2 box-shadow d-none d-md-block"></div>
             </div>
 
             <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                    <div className="my-3 py-3">
-                        <h2 className="display-5">App Loja Virtual</h2>
-                        <p className="lead">Flutter  -  Dart</p>
+                <a href="/trabalhos/shop">
+
+                    <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                        <div className="my-3 py-3">
+                            <h2 className="display-5">App Loja Virtual</h2>
+                            <p className="lead">Flutter  -  Dart</p>
+                        </div>
+                        <div className="bg-light box-shadow mx-auto padrao overflow-hidden">
+                            <img src={img1} alt='img1' id='img1' className="bg-light box-shadow mx-auto padrao2" />
+                        </div>
                     </div>
-                    <div className="bg-light box-shadow mx-auto padrao"></div>
-                </div>
-                <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div className="my-3 p-3">
-                        <h2 className="display-5">Another headline</h2>
-                        <p className="lead">And an even wittier subheading.</p>
+                </a>
+                <a href="/trabalhos/meals">
+                    <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden">
+                        <div className="my-3 p-3">
+                            <h2 className="display-5">App Vamos Cozinhar</h2>
+                            <p className="lead">Flutter  -  Dart</p>
+                        </div>
+                        <div className="bg-white box-shadow mx-auto padrao overflow-hidden">
+                            <img src={img2} alt='img2' id='img2' className="bg-white box-shadow mx-auto padrao2" />
+                        </div>
                     </div>
-                    <div className="bg-white box-shadow mx-auto padrao"></div>
-                </div>
+                </a>
             </div>
 
             <div className="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-                <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                    <div className="my-3 py-3">
-                        <h2 className="display-5">Another headline</h2>
-                        <p className="lead">And an even wittier subheading.</p>
+                <a href="/trabalhos/despesas">
+                    <div className="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+                        <div className="my-3 py-3">
+                            <h2 className="display-5">App Despesas</h2>
+                            <p className="lead">Flutter  -  Dart</p>
+                        </div>
+                        <div className="bg-light box-shadow mx-auto padrao">
+                            <img src={img3} alt='img3' id='img3' className="bg-light box-shadow mx-auto padrao2" />
+                        </div>
                     </div>
-                    <div className="bg-light box-shadow mx-auto padrao"></div>
-                </div>
-                <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                    <div className="my-3 p-3">
-                        <h2 className="display-5">Another headline</h2>
-                        <p className="lead">And an even wittier subheading.</p>
+                </a>
+                <a href="/trabalhos/nativas">
+                    <div className="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-dark text-center overflow-hidden">
+                        <div className="my-3 p-3">
+                            <h2 className="display-5">App Lugares</h2>
+                            <p className="lead">Flutter  -  Dart</p>
+                        </div>
+                        <div className="bg-white box-shadow mx-auto padrao">
+                            <img src={img4} alt='img4' id='img4' className="bg-white box-shadow mx-auto padrao2" />
+                        </div>
                     </div>
-                    <div className="bg-white box-shadow mx-auto padrao"></div>
-                </div>
+                </a>
             </div>
-            <Contador />
         </div>
     )
 }
 
-function Contador() {
-    const [contador, setContador] = useState(1);
-    function adicionarContador() {
-        setContador(contador * 2);
-    }
-
-    return (
-        <div>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Adicionar</button>
-        </div>
-    )
-}
 
 export default Home;
