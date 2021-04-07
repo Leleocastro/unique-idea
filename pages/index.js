@@ -119,6 +119,7 @@ function Home() {
                 <div className="col-md-5 p-lg-5 mx-auto my-5">
                     <h2 className="display-8 font-weight-normal">Portfólio</h2>
                     <h1 className="display-4 font-weight-normal">Leonardo Castro</h1>
+                    <p className="lead font-weight-normal">Desenvolvedor Full-Stack.</p>
                     <p className="lead font-weight-normal">Soluções simples em várias linguagens, todo meu aprendizado e trabalhos.</p>
                     {/* <a className="btn btn-outline-secondary" href="#">Veja mais</a> */}
                 </div>
