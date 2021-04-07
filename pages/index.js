@@ -120,7 +120,7 @@ function Home() {
                     <h2 className="display-8 font-weight-normal">Portfólio</h2>
                     <h1 className="display-4 font-weight-normal">Leonardo Castro</h1>
                     <p className="lead font-weight-normal">Desenvolvedor Full-Stack.</p>
-                    <p className="lead font-weight-normal">Soluções simples em várias linguagens, todo meu aprendizado e trabalhos.</p>
+                    <p className="lead font-weight-normal">Soluções simples em várias linguagens, todo meu aprendizado e trabalhos estão aqui.</p>
                     {/* <a className="btn btn-outline-secondary" href="#">Veja mais</a> */}
                 </div>
                 <div className="product-device box-shadow d-none d-md-block"></div>
